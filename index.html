@@ -46,16 +46,9 @@
                     }
 
                     //pointer margin
+                    pointerMargin=(BMI/40)*100;
                     var pointer=document.getElementById("pointer");
-                    if(weight>=(5) && weight<=(53)){
-                        pointer.style.marginLeft="15%"
-                    }else if(weight>=(54) && weight<=(72)){
-                        pointer.style.marginLeft="35%"
-                    }else if(weight>=(73) && weight<=(86)){
-                        pointer.style.marginLeft="60%"
-                    }else if(weight>=87){
-                        pointer.style.marginLeft="90%"
-                    }
+                    pointer.style.marginLeft=pointerMargin+"%"
          }
             
     </script>
